@@ -1,6 +1,6 @@
 ---
 title: Notes from "Zero To One"
-data: 2017-12-20
+date: 2017-12-20
 category: Notes
 ---
 
