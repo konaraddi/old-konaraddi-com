@@ -4,7 +4,7 @@ import colors from "../utils/colors";
 import styled from "styled-components";
 
 const InternalLinkWrapper = styled(Link)`
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: normal;
   color: inherit;
   :hover {

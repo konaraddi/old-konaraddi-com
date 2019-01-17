@@ -30,7 +30,7 @@
   {
     "name": "Over Sand Vehicle",
     "link": "https://github.com/konaraddi/osv-fire",
-    "description": "Programmed and helped build a mini car to autonomously navigate an obstacle course, communicate with a remote computer, and detect then extinguish flames.",
+    "description": "Programmed and helped build a mini car to autonomously navigate an obstacle course.",
     "tech": "Arduino Uno, C/C++, infrared sensors, ultrasound sensors",
     "date": "Spring 2017"
   },
@@ -42,16 +42,9 @@
     "date": "Feb 2017"
   },
   {
-    "name": "PiPass",
-    "link": "http://www.aces.umd.edu/news/story/northrop-grumman-hosts-2nd-annual-cyberengineer-competition",
-    "description": "Chrome extension to enable 3FA on desktop sites. Won 2nd Place at Northrop Grumman's CyberEngineer Challenge.",
-    "tech": "Chrome Extension, Material Design Lite, Flask, Raspberry Pi, SQLite, Fingerprint scanner",
-    "date": "Fall 2016"
-  },
-  {
     "name": "Apps on Play Store",
     "link": "https://play.google.com/store/apps/developer?id=konaraddio",
-    "description": "Apps that customize the device's homepage UI/UX. Over 4,300 monthly active users and 46,000 downloads.",
+    "description": "Apps that customize the device's homepage UI/UX. Over 4,300 monthly active users.",
     "tech": "Android SDK, Java, KLWP",
     "date": 2016
   },
