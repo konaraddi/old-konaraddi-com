@@ -1,6 +1,5 @@
 # TODO
 
-- [ ] Fix images!
 - [ ] Posts should be filterable (#blog, #content, #notes)
 - [ ] SEO
 - [ ] Look at popular Gatsby plugins
