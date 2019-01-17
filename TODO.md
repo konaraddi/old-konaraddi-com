@@ -7,3 +7,4 @@
 - [] Look at popular Gatsby plugins
 - [] Lighthouse audit
 - [] Add license and make public
+- [] Add Google analytics
