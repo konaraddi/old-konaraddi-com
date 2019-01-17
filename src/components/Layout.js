@@ -1,3 +1,6 @@
+import "typeface-ibm-plex-sans";
+import "typeface-ibm-plex-serif";
+
 import React from "react";
 import Navbar from "./Navbar";
 import styled from "styled-components";
