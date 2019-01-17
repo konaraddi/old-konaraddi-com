@@ -5,7 +5,9 @@ import { Grid, GridElement } from "../components/Grid";
 
 export default function({ data }) {
   return (
-    <Layout titleText="Omkar's Projects">
+    <Layout>
+      <h1>Omkar's projects</h1>
+      <br />
       <Grid>
         {data.allJson.edges.map(({ node }) => (
           <GridElement key={node.link}>

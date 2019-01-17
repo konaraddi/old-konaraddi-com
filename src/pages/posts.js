@@ -16,12 +16,15 @@ const GridElement = styled.div`
 `;
 
 export default ({ data }) => (
-  <Layout titleText="Omkar's Posts">
+  <Layout>
+    <h1>Omkar's posts</h1>
+    <br />
     <Grid>
       {data.allMarkdownRemark.edges.map(({ node }, index) => (
         <GridElement key={node.id}>
           <small>
-            {index + 1} &nbsp; &middot; &nbsp; {node.frontmatter.date}
+            {index + 1} &nbsp; &middot; &nbsp; {node.frontmatter.date} &nbsp;
+            &middot; &nbsp; #{node.frontmatter.category}
           </small>
           <h3>
             <InternalLink to={node.fields.slug}>
@@ -44,6 +47,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "YYYY-MM-DD")
+            category
           }
           fields {
             slug

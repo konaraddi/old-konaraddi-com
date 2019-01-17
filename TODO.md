@@ -1,7 +1,6 @@
 # TODO
 
 - [] Fix images!
-- [] Links should appear clickable; nothing signifies it's clickable!
 - [] Posts should be filterable (#blog, #content, #notes)
 - [] Posts' slugs should show category (/blog/, /content/, /notes/)
 - [] SEO

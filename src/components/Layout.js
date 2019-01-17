@@ -5,6 +5,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import styled from "styled-components";
 import media from "../utils/media";
+import colors from "../utils/colors";
 
 const LayoutWrapper = styled.div`
   margin: 3rem 24px 3rem 24px;
@@ -12,12 +13,19 @@ const LayoutWrapper = styled.div`
   ${media.fullhd`max-width: 1200px; margin: 4rem auto;`}
 `;
 
-export default ({ children, titleText }) => (
-  <LayoutWrapper>
-    <Navbar />
-    <br />
-    <h1>{titleText}</h1>
-    <br />
-    {children}
-  </LayoutWrapper>
+export default ({ children }) => (
+  <div>
+    <style
+      dangerouslySetInnerHTML={{
+        __html: `
+        html { background-color: ${colors.white} }
+        `
+      }}
+    />
+    <LayoutWrapper>
+      <Navbar />
+      <br />
+      {children}
+    </LayoutWrapper>
+  </div>
 );

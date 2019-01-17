@@ -1,5 +1,5 @@
 ---
-title: How Progressive Web Apps could help new mobile operating systems succeed
+title: Progressive Web Apps could help new mobile operating systems succeed
 date: 2019-01-06
 category: Content
 ---

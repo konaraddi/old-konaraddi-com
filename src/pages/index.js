@@ -9,7 +9,9 @@ const Body = styled.div`
 `;
 
 export default () => (
-  <Layout titleText="Omkar Konaraddi">
+  <Layout>
+    <h1>Omkar Konaraddi</h1>
+    <br />
     <Body>
       <p>
         Currently a student at University of Maryland and teaching assistant for

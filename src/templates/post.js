@@ -5,7 +5,13 @@ import Layout from "../components/Layout";
 import styled from "styled-components";
 import media from "../utils/media";
 
+const TitleWrapper = styled.h1`
+  ${media.tablet`max-width: 960px;`}
+`;
+
 const Body = styled.div`
+  margin-left: auto;
+  margin-right: auto;
   ${media.tablet`max-width: 640px;`}
 `;
 
@@ -15,28 +21,32 @@ export default ({ data, pageContext }) => {
   const next = pageContext.next;
   console.log(pageContext);
   return (
-    <Layout titleText={post.frontmatter.title}>
+    <Layout>
+      <TitleWrapper>{post.frontmatter.title}</TitleWrapper>
+      <p>
+        {post.frontmatter.date} &nbsp; &middot; &nbsp; #
+        {post.frontmatter.category}
+      </p>
+      <br />
       <Body>
-        <p>
-          <i>Published on {post.frontmatter.date}.</i>
-        </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-
+      </Body>
+      <div style={{ display: "flex" }}>
         {previous && (
           <p>
             <InternalLink to={previous.fields.slug} rel="prev">
-              ← {previous.frontmatter.title}
+              ← Older: <i>{previous.frontmatter.title}</i>
             </InternalLink>
           </p>
         )}
         {next && (
-          <p>
+          <p style={{ marginLeft: "auto" }}>
             <InternalLink to={next.fields.slug} rel="next">
-              {next.frontmatter.title} →
+              Newer: <i>{next.frontmatter.title}</i> →
             </InternalLink>
           </p>
         )}
-      </Body>
+      </div>
     </Layout>
   );
 };
@@ -48,6 +58,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "YYYY-MM-DD")
+        category
       }
       fields {
         slug

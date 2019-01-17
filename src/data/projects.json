@@ -4,55 +4,55 @@
     "link": "https://github.com/konaraddi/web-riimote",
     "description": "Turns your smartphone into a 3D controller with a web app.",
     "tech": "Vue, Node, Socket.io",
-    "date": "July 2018"
+    "time": "July 2018"
   },
   {
     "name": "c1-airbnb",
     "link": "https://github.com/konaraddi/c1-airbnb",
     "description": "Web app to identify trends, suggest optimal pricing, and project return on investment for Airbnb hosts.",
     "tech": "Vue, Python",
-    "date": "Nov 2017"
+    "time": "Nov 2017"
   },
   {
     "name": "Robotics @ Maryland",
     "link": "https://ram-website-copy.surge.sh",
     "description": "Revamped Robotics @ Maryland's website.",
     "tech": "Jekyll, Bulma",
-    "date": "Fall 2017"
+    "time": "Fall 2017"
   },
   {
     "name": "Python Camp Materials",
     "link": "https://github.com/konaraddi/LearnPython",
     "description": "Led classes of 10 to 20 middle school kids; taught programming in Python and wrote the curriculum.",
     "tech": "Python, tkinter",
-    "date": "Summer 2017"
+    "time": "Summer 2017"
   },
   {
     "name": "Over Sand Vehicle",
     "link": "https://github.com/konaraddi/osv-fire",
     "description": "Programmed and helped build a mini car to autonomously navigate an obstacle course.",
     "tech": "Arduino Uno, C/C++, infrared sensors, ultrasound sensors",
-    "date": "Spring 2017"
+    "time": "Spring 2017"
   },
   {
     "name": "Chrome Extension Hacktorial",
     "link": "https://drive.google.com/open?id=1tDJawj0h-0rGlu7h6knF8GPdgw_uyjGZV7X16FvAd4o",
     "description": "Slides from a tech talk on building Chrome extensions.",
     "tech": "JavaScript, HTML",
-    "date": "Feb 2017"
+    "time": "Feb 2017"
   },
   {
     "name": "Apps on Play Store",
     "link": "https://play.google.com/store/apps/developer?id=konaraddio",
     "description": "Apps that customize the device's homepage UI/UX. Over 4,300 monthly active users.",
     "tech": "Android SDK, Java, KLWP",
-    "date": 2016
+    "time": "2016"
   },
   {
     "name": "Minimal Walls",
     "link": "https://plus.google.com/collection/QsUyPB",
     "description": "Minimal wallpapers for mobile devices.",
     "tech": "Geomme",
-    "date": 2016
+    "time": "2016"
   }
 ]

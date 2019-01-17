@@ -8,7 +8,7 @@ const typography = new Typography({
   headerColor: colors.black,
   baseFontSize: "18px",
   scaleRatio: 3,
-  baseLineHeight: 1.666,
+  baseLineHeight: 1.8,
   headerFontFamily: ["IBM Plex Sans", "sans-serif"],
   bodyFontFamily: ["IBM Plex Serif", "serif"],
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
