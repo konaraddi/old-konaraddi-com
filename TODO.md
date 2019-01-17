@@ -1,5 +1,6 @@
 # TODO
 
+- [] Fix images!
 - [] Links should appear clickable; nothing signifies it's clickable!
 - [] Posts should be filterable (#blog, #content, #notes)
 - [] Posts' slugs should show category (/blog/, /content/, /notes/)
@@ -8,3 +9,4 @@
 - [] Lighthouse audit
 - [] Add license and make public
 - [] Add Google analytics
+- [] Quick and smooth animation on page transitions
