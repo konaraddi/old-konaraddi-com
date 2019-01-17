@@ -1,5 +1,5 @@
 # konaraddi.com
 
-Built with Gatsby. Using IBM Plex Sans and Serif.
+Built with [Gatsby](https://www.gatsbyjs.org/). Uses IBM Plex Sans and Serif.
 
-See [TODO](./TODO.md)
+See [TODO](./TODO.md) for to-do list.
