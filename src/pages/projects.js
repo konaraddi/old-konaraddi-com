@@ -1,20 +1,26 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
+import { Grid, GridElement } from "../components/Grid";
 
 export default function({ data }) {
   return (
-    <Layout>
-      <h1>Sometimes I build.</h1>
-      <ul>
+    <Layout titleText="Omkar's Projects">
+      <Grid>
         {data.allJson.edges.map(({ node }) => (
-          <li key={node.link}>
-            <a href={node.link} target="_blank" rel="noopener noreferrer">
-              {node.name}
-            </a>
-          </li>
+          <GridElement key={node.link}>
+            <p>
+              <strong>
+                <a href={node.link} target="_blank" rel="noopener noreferrer">
+                  {node.name}
+                </a>
+              </strong>
+              <br />
+              {node.description}
+            </p>
+          </GridElement>
         ))}
-      </ul>
+      </Grid>
     </Layout>
   );
 }

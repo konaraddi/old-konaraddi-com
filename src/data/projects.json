@@ -1,114 +1,65 @@
 [
   {
-    "name": "umd-course-vis",
-    "link": "https://github.com/konaraddi/umd-course-vis",
-    "description": "Visualize a graph of prerequisites for courses offered at UMD.",
-    "tech": "Vue",
-    "time": "Aug 2018",
-    "show": false
-  },
-  {
     "name": "web-riimote",
     "link": "https://github.com/konaraddi/web-riimote",
-    "description": "Turn your smartphone into a 3D controller (like a Wii remote) with a web app.",
+    "description": "Turns your smartphone into a 3D controller with a web app.",
     "tech": "Vue, Node, Socket.io",
-    "time": "July 2018",
-    "show": true
-  },
-  {
-    "name": "laundr-o-mat",
-    "link": "https://laundr-o-mat.surge.sh/#/",
-    "description": "A subpar laundromat.",
-    "tech": "Vue",
-    "time": "Mar 2018",
-    "show": false
-  },
-  {
-    "name": "SocialSpend",
-    "link": "https://github.com/kyle8998/socialspend",
-    "description": "Web and augmented reality apps to visualize nearby friends’ transactions and reviews.",
-    "tech": "Node, Firebase, Google Places API, Nessie API, ARKit",
-    "time": "Jan 2018",
-    "show": true
+    "date": "July 2018"
   },
   {
     "name": "c1-airbnb",
     "link": "https://github.com/konaraddi/c1-airbnb",
     "description": "Web app to identify trends, suggest optimal pricing, and project return on investment for Airbnb hosts.",
     "tech": "Vue, Python",
-    "time": "Nov 2017",
-    "show": true
+    "date": "Nov 2017"
   },
   {
     "name": "Robotics @ Maryland",
     "link": "https://ram-website-copy.surge.sh",
     "description": "Revamped Robotics @ Maryland's website.",
     "tech": "Jekyll, Bulma",
-    "time": "Fall 2017",
-    "show": true
+    "date": "Fall 2017"
   },
   {
     "name": "Python Camp Materials",
     "link": "https://github.com/konaraddi/LearnPython",
     "description": "Led classes of 10 to 20 middle school kids; taught programming in Python and wrote the curriculum.",
     "tech": "Python, tkinter",
-    "time": "Summer 2017",
-    "show": true
-  },
-  {
-    "name": "UMD CyberEdu",
-    "link": "https://umdcyberedu.github.io",
-    "description": "Built the UMD CyberEdu program's website.",
-    "tech": "Mustache, JavaScript, HTML, CSS, Sass",
-    "time": "Summer 2017",
-    "show": false
-  },
-  {
-    "name": "ACES Honeypot",
-    "link": "https://drive.google.com/file/d/0B047DAZf8ze2UXpieFhmSlZsMlE/view?usp=sharing",
-    "description": "Collected and analyzed malware.",
-    "tech": "VirusTotal API, Ubuntu VM, Bash",
-    "time": "Spring 2017",
-    "show": true
+    "date": "Summer 2017"
   },
   {
     "name": "Over Sand Vehicle",
     "link": "https://github.com/konaraddi/osv-fire",
-    "description": "Programmed a mini car to autonomously navigate an obstacle course.",
+    "description": "Programmed and helped build a mini car to autonomously navigate an obstacle course, communicate with a remote computer, and detect then extinguish flames.",
     "tech": "Arduino Uno, C/C++, infrared sensors, ultrasound sensors",
-    "time": "Spring 2017",
-    "show": true
+    "date": "Spring 2017"
   },
   {
     "name": "Chrome Extension Hacktorial",
     "link": "https://drive.google.com/open?id=1tDJawj0h-0rGlu7h6knF8GPdgw_uyjGZV7X16FvAd4o",
-    "description": "Delivered a tech talk to over 50 college students on building chrome extensions.",
+    "description": "Slides from a tech talk on building Chrome extensions.",
     "tech": "JavaScript, HTML",
-    "time": "Feb 2017",
-    "show": true
+    "date": "Feb 2017"
   },
   {
     "name": "PiPass",
     "link": "http://www.aces.umd.edu/news/story/northrop-grumman-hosts-2nd-annual-cyberengineer-competition",
-    "description": "Built a Chrome extension to enable 3FA on desktop sites.",
+    "description": "Chrome extension to enable 3FA on desktop sites. Won 2nd Place at Northrop Grumman's CyberEngineer Challenge.",
     "tech": "Chrome Extension, Material Design Lite, Flask, Raspberry Pi, SQLite, Fingerprint scanner",
-    "time": "Fall 2016",
-    "show": true
+    "date": "Fall 2016"
   },
   {
     "name": "Apps on Play Store",
     "link": "https://play.google.com/store/apps/developer?id=konaraddio",
-    "description": "Apps that customize the device's UI. Over 4,300 monthly active users and 46,000 downloads.",
+    "description": "Apps that customize the device's homepage UI/UX. Over 4,300 monthly active users and 46,000 downloads.",
     "tech": "Android SDK, Java, KLWP",
-    "time": 2016,
-    "show": true
+    "date": 2016
   },
   {
     "name": "Minimal Walls",
     "link": "https://plus.google.com/collection/QsUyPB",
     "description": "Minimal wallpapers for mobile devices.",
     "tech": "Geomme",
-    "time": 2016,
-    "show": true
+    "date": 2016
   }
 ]

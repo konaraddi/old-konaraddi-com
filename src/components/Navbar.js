@@ -1,16 +1,32 @@
 import React from "react";
-import { Link } from "gatsby";
+import InternalLink from "./InternalLink";
+import styled from "styled-components";
+import media from "../utils/media";
 
-const NavLink = ({ to, children }) => (
-  <Link to={to}>
-    <h3 style={{ display: "inline" }}>{children}</h3>
-  </Link>
-);
+const Nav = styled.nav`
+  display: flex;
+`;
+
+const H3 = styled.h3`
+  margin-right: 0.75rem;
+  ${media.tablet`
+    margin-right: 1.5rem;
+  `}
+  :last-child {
+    margin-right: 0rem;
+  }
+`;
 
 export default () => (
-  <div>
-    <NavLink to="/">Omkar</NavLink>
-    <NavLink to="/writing">Writing</NavLink>
-    <NavLink to="/projects">Projects</NavLink>
-  </div>
+  <Nav>
+    <H3>
+      <InternalLink to="/">O.K.</InternalLink>
+    </H3>
+    <H3 style={{ marginLeft: "auto" }}>
+      <InternalLink to="/posts">Posts</InternalLink>
+    </H3>
+    <H3>
+      <InternalLink to="/projects">Projects</InternalLink>
+    </H3>
+  </Nav>
 );
