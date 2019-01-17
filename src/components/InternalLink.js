@@ -14,8 +14,18 @@ const InternalLinkWrapper = styled(Link)`
   }
 `;
 
-export default ({ to, children, style }) => (
-  <InternalLinkWrapper to={to} style={style}>
-    {children}
-  </InternalLinkWrapper>
-);
+export default function({ to, children, style }) {
+  return (
+    <InternalLinkWrapper
+      to={to}
+      style={style}
+      activeStyle={{
+        pointerEvents: "none",
+        cursor: "not-allowed",
+        opacity: 0.3
+      }}
+    >
+      {children}
+    </InternalLinkWrapper>
+  );
+}
