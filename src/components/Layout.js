@@ -9,7 +9,6 @@ const LayoutWrapper = styled.div`
   ${media.fullhd`max-width: 1200px; margin: 4rem auto;`}
 `;
 
-// TODO keep margin left/right at 24px on mobile
 export default ({ children, titleText }) => (
   <LayoutWrapper>
     <Navbar />

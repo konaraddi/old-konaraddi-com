@@ -20,13 +20,19 @@ const H3 = styled.h3`
 export default () => (
   <Nav>
     <H3>
-      <InternalLink to="/">O.K.</InternalLink>
+      <InternalLink to="/" style={{ textDecoration: "none" }}>
+        O.K.
+      </InternalLink>
     </H3>
     <H3 style={{ marginLeft: "auto" }}>
-      <InternalLink to="/posts">Posts</InternalLink>
+      <InternalLink to="/posts" style={{ textDecoration: "none" }}>
+        Posts
+      </InternalLink>
     </H3>
     <H3>
-      <InternalLink to="/projects">Projects</InternalLink>
+      <InternalLink to="/projects" style={{ textDecoration: "none" }}>
+        Projects
+      </InternalLink>
     </H3>
   </Nav>
 );

@@ -34,7 +34,6 @@ export const query = graphql`
           link
           description
           tech
-          show
         }
       }
     }
