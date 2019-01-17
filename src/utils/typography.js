@@ -1,8 +1,6 @@
 import Typography from "typography";
 import colors from "./colors";
 
-// TODO change base font size on mobile to something smaller
-// or change scaling
 const typography = new Typography({
   bodyColor: colors.black,
   headerColor: colors.black,
