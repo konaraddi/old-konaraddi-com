@@ -1,22 +1,44 @@
 [
   {
+    "name": "umd-course-vis",
+    "link": "https://github.com/konaraddi/umd-course-vis",
+    "description": "Visualize a graph of prerequisites for courses offered at University of Maryland.",
+    "tech": "Vue",
+    "time": "Aug 2018",
+    "show": false
+  },
+  {
     "name": "web-riimote",
     "link": "https://github.com/konaraddi/web-riimote",
-    "description": "Turns your smartphone into a 3D controller with a web app.",
+    "description": "Turns your smartphone into a 3D controller with a web app. 440+ GitHub stars and 5,800+ visitors.",
     "tech": "Vue, Node, Socket.io",
     "time": "July 2018"
   },
   {
+    "name": "laundr-o-mat",
+    "link": "https://laundr-o-mat.surge.sh/#/",
+    "description": "A subpar laundromat.",
+    "tech": "Vue",
+    "time": "Mar 2018"
+  },
+  {
+    "name": "SocialSpend",
+    "link": "https://github.com/kyle8998/socialspend",
+    "description": "Web and augmented reality apps to visualize nearby friends’ transactions and reviews.",
+    "tech": "Node, Firebase, Google Places API, Nessie API, ARKit",
+    "time": "Jan 2018"
+  },
+  {
     "name": "c1-airbnb",
     "link": "https://github.com/konaraddi/c1-airbnb",
-    "description": "Web app to identify trends, suggest optimal pricing, and project return on investment for Airbnb hosts.",
+    "description": "Identify trends and project return on investment for Airbnb hosts. Invited to Capital One Summit (40/450+).",
     "tech": "Vue, Python",
     "time": "Nov 2017"
   },
   {
     "name": "Robotics @ Maryland",
     "link": "https://ram-website-copy.surge.sh",
-    "description": "Revamped Robotics @ Maryland's website.",
+    "description": "Built Robotics @ Maryland's website.",
     "tech": "Jekyll, Bulma",
     "time": "Fall 2017"
   },
@@ -28,23 +50,37 @@
     "time": "Summer 2017"
   },
   {
+    "name": "ACES Honeypot Research",
+    "link": "https://drive.google.com/file/d/0B047DAZf8ze2UXpieFhmSlZsMlE/view?usp=sharing",
+    "description": "Set up honeypots then collected and analyzed malware.",
+    "tech": "Ubuntu, Bash, VirusTotal API",
+    "time": "Spring 2017"
+  },
+  {
     "name": "Over Sand Vehicle",
     "link": "https://github.com/konaraddi/osv-fire",
-    "description": "Programmed and helped build a mini car to autonomously navigate an obstacle course.",
+    "description": "Programmed a mini car to autonomously navigate an obstacle course. Finalist at UMD Over Sand Vehicle competition.",
     "tech": "Arduino Uno, C/C++, infrared sensors, ultrasound sensors",
     "time": "Spring 2017"
   },
   {
     "name": "Chrome Extension Hacktorial",
     "link": "https://drive.google.com/open?id=1tDJawj0h-0rGlu7h6knF8GPdgw_uyjGZV7X16FvAd4o",
-    "description": "Slides from a tech talk on building Chrome extensions.",
+    "description": "Delivered a talk on building Chrome extensions to 50+ college students.",
     "tech": "JavaScript, HTML",
     "time": "Feb 2017"
   },
   {
+    "name": "PiPass",
+    "link": "https://aces.umd.edu/news/story/northrop-grumman-hosts-2nd-annual-cyberengineer-competition",
+    "description": "Raspberry Pi password manager with 3FA. 2nd Place at Northrop Grumman CyberEngineer Challenge.",
+    "tech": "Raspberry Pi, Chrome extension, Flask",
+    "time": "Fall 2016"
+  },
+  {
     "name": "Apps on Play Store",
     "link": "https://play.google.com/store/apps/developer?id=konaraddio",
-    "description": "Apps that customize the device's homepage UI/UX. Over 4,300 monthly active users.",
+    "description": "Apps that customize the device's homepage UI/UX. 4,300+ monthly active users.",
     "tech": "Android SDK, Java, KLWP",
     "time": "2016"
   },
