@@ -6,15 +6,11 @@ import styled from "styled-components";
 const InternalLinkWrapper = styled(Link)`
   text-decoration: none;
   font-weight: normal;
-  color: inherit;
+  color: ${colors.primary};
 
-  // for the underline
-  -webkit-transition: all 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  transition: all 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  box-shadow: inset 0 -0.75rem 0 0 ${colors.primary};
-  padding-bottom: 0.15rem;
   :hover {
-    box-shadow: inset 0 -1.5rem 0 0 ${colors.primary};
+    background-color: ${colors.primary};
+    color: ${colors.white};
   }
 `;
 

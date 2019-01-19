@@ -1,6 +1,8 @@
 import Typography from "typography";
 import colors from "./colors";
 
+// see src/global-styles.css for more
+
 const typography = new Typography({
   bodyColor: colors.black,
   headerColor: colors.black,
@@ -10,6 +12,9 @@ const typography = new Typography({
   headerFontFamily: ["IBM Plex Sans", "sans-serif"],
   bodyFontFamily: ["IBM Plex Serif", "serif"],
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
+    a: {
+      color: colors.primary
+    },
     pre: {
       overflow: "auto",
       margin: 0

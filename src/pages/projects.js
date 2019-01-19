@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import { Grid, GridElement } from "../components/Grid";
+import ExternalLink from "../components/ExternalLink";
 
 export default function({ data }) {
   return (
@@ -12,11 +13,7 @@ export default function({ data }) {
         {data.allJson.edges.map(({ node }) => (
           <GridElement key={node.link}>
             <p>
-              <strong>
-                <a href={node.link} target="_blank" rel="noopener noreferrer">
-                  {node.name}
-                </a>
-              </strong>
+              <ExternalLink href={node.link}>{node.name}</ExternalLink>
               <br />
               {node.description}
             </p>

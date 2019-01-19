@@ -19,7 +19,6 @@ export default ({ data, pageContext }) => {
   const post = data.markdownRemark;
   const previous = pageContext.previous;
   const next = pageContext.next;
-  console.log(pageContext);
   return (
     <Layout>
       <TitleWrapper>{post.frontmatter.title}</TitleWrapper>
