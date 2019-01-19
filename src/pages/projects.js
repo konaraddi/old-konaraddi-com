@@ -3,12 +3,19 @@ import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import { Grid, GridElement } from "../components/Grid";
 import ExternalLink from "../components/ExternalLink";
+import GitHubCorner from "../components/GitHubCorner";
+import colors from "../utils/colors";
 
 export default function({ data }) {
   return (
     <Layout>
       <h1>Omkar's projects</h1>
       <br />
+      <GitHubCorner
+        url={"https://github.com/konaraddi/konaraddi-com-v2"}
+        fill={colors.primary}
+        color={colors.white}
+      />
       <Grid>
         {data.allJson.edges.map(({ node }) => (
           <GridElement key={node.link}>
