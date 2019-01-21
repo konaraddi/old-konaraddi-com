@@ -20,13 +20,13 @@ const LinkWrapper = styled.h3`
 export default () => (
   <NavWrapper>
     <LinkWrapper>
-      <InternalLink to="/">O.K.</InternalLink>
+      <InternalLink to="/">o.k.</InternalLink>
     </LinkWrapper>
     <LinkWrapper style={{ marginLeft: "auto" }}>
-      <InternalLink to="/posts">Posts</InternalLink>
+      <InternalLink to="/posts">posts</InternalLink>
     </LinkWrapper>
     <LinkWrapper>
-      <InternalLink to="/projects">Projects</InternalLink>
+      <InternalLink to="/projects">projects</InternalLink>
     </LinkWrapper>
   </NavWrapper>
 );

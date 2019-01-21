@@ -1,8 +1,6 @@
 import Typography from "typography";
 import colors from "./colors";
 
-// see src/global-styles.css for more
-
 const typography = new Typography({
   bodyColor: colors.black,
   headerColor: colors.black,
