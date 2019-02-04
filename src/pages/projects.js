@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import { Grid, GridElement } from "../components/Grid";
-import ExternalLink from "../components/ExternalLink";
 import GitHubCorner from "../components/GitHubCorner";
 import colors from "../utils/colors";
 
@@ -20,7 +19,9 @@ export default function({ data }) {
         {data.allJson.edges.map(({ node }) => (
           <GridElement key={node.link}>
             <p>
-              <ExternalLink href={node.link}>{node.name}</ExternalLink>
+              <a href={node.link} target="_blank" rel="noopener noreferrer">
+                <b>{node.name}</b>
+              </a>
               <br />
               {node.description}
             </p>

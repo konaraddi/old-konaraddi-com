@@ -7,26 +7,33 @@ const NavWrapper = styled.nav`
   display: flex;
 `;
 
-const LinkWrapper = styled.h3`
-  margin-right: 0.75rem;
+const LinkWrapper = styled.h4`
+  margin-right: 1rem;
   ${media.tablet`
     margin-right: 1.5rem;
   `}
   :last-child {
     margin-right: 0rem;
   }
+  text-transform: uppercase;
 `;
 
 export default () => (
   <NavWrapper>
     <LinkWrapper>
-      <InternalLink to="/">o.k.</InternalLink>
+      <InternalLink to="/">
+        <b>Omkar</b>
+      </InternalLink>
     </LinkWrapper>
     <LinkWrapper style={{ marginLeft: "auto" }}>
-      <InternalLink to="/posts">posts</InternalLink>
+      <InternalLink to="/posts">
+        <b>Posts</b>
+      </InternalLink>
     </LinkWrapper>
     <LinkWrapper>
-      <InternalLink to="/projects">projects</InternalLink>
+      <InternalLink to="/projects">
+        <b>Projects</b>
+      </InternalLink>
     </LinkWrapper>
   </NavWrapper>
 );
