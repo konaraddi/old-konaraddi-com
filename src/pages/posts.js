@@ -23,7 +23,7 @@ export default ({ data }) => (
       {data.allMarkdownRemark.edges.map(({ node }, index) => (
         <GridElement key={node.id}>
           <small>
-            {index + 1} &nbsp; &middot; &nbsp; {node.frontmatter.date} &nbsp;
+            {data.allMarkdownRemark.edges.length - index} &nbsp; &middot; &nbsp; {node.frontmatter.date} &nbsp;
             &middot; &nbsp; #{node.frontmatter.category}
           </small>
           <h3>

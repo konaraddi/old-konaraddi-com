@@ -17,9 +17,9 @@ const HomePageGridElement = styled.div`
 
 export default ({ data }) => (
   <Layout>
+    <h1>Omkar Konaraddi</h1>
+    <br />
     <HomePageGrid>
-      <h1>Omkar Konaraddi</h1>
-      <br />
       <HomePageGridElement>
         <p>
           I'm a student at{" "}
@@ -63,8 +63,8 @@ export default ({ data }) => (
         {data.allMarkdownRemark.edges.map(({ node }, index) => (
           <div key={node.id}>
             <small>
-              {index + 1} &nbsp; &middot; &nbsp; {node.frontmatter.date} &nbsp;
-              &middot; &nbsp; #{node.frontmatter.category}
+              {node.frontmatter.date} &nbsp; &middot; &nbsp; #
+              {node.frontmatter.category}
             </small>
             <h3>
               <InternalLink to={node.fields.slug}>
