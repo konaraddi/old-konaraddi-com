@@ -1,3 +1,4 @@
+import { graphql } from "gatsby";
 import React from "react";
 import InternalLink from "../components/InternalLink";
 import Layout from "../components/Layout";
@@ -39,7 +40,39 @@ export default ({ data }) => (
           and UMD. I was a teaching assistant for both <i>Intro. to Node</i> and{" "}
           <i>Intro. to React</i> at UMD.
         </p>
-        <p>Interested in software, education, and design.</p>
+        <p>
+          One of my projects turns smartphones into 3D controllers using a web
+          app. Check out the demo below.
+        </p>
+        <div
+          style={{
+            overflow: "hidden",
+            paddingBottom: "56.25%",
+            position: "relative",
+            height: 0
+          }}
+        >
+          <iframe
+            title="Web Riimote Demo"
+            width="560"
+            height="315"
+            style={{
+              left: 0,
+              top: 0,
+              height: "100%",
+              width: "100%",
+              position: "absolute"
+            }}
+            src="https://www.youtube.com/embed/O2r1-lR6Xq8"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
+        </div>
+
+        <br />
+
+        <p>I'm interested in software, education, and design.</p>
         <p>
           <a
             href="https://github.com/konaraddi"
@@ -58,6 +91,7 @@ export default ({ data }) => (
           </a>
         </p>
       </HomePageGridElement>
+
       <HomePageGridElement>
         <h4 style={{ textTransform: "uppercase" }}>Recent posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }, index) => (
@@ -75,6 +109,22 @@ export default ({ data }) => (
         ))}
         <h4>
           <InternalLink to="/posts">See all posts →</InternalLink>
+        </h4>
+
+        <br />
+
+        <h4 style={{ textTransform: "uppercase" }}>Recent projects</h4>
+        {data.allJson.edges.map(({ node }) => (
+          <p key={node.link}>
+            <a href={node.link} target="_blank" rel="noopener noreferrer">
+              <b>{node.name}</b>
+            </a>
+            <br />
+            {node.description}
+          </p>
+        ))}
+        <h4>
+          <InternalLink to="/projects">See all projects →</InternalLink>
         </h4>
       </HomePageGridElement>
     </HomePageGrid>
@@ -99,6 +149,16 @@ export const query = graphql`
           fields {
             slug
           }
+        }
+      }
+    }
+    allJson(limit: 2) {
+      edges {
+        node {
+          name
+          link
+          description
+          tech
         }
       }
     }
