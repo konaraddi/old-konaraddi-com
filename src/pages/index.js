@@ -23,17 +23,8 @@ export default ({ data }) => (
     <HomePageGrid>
       <HomePageGridElement>
         <p>
-          I'm a student at{" "}
-          <a href="https://umd.edu" target="_blank" rel="noopener noreferrer">
-            University of Maryland
-          </a>{" "}
-          (UMD) where I'm pursuing a B.S. in Computer Science. I'm also an
-          organizer at{" "}
-          <a href="https://bit.camp" target="_blank" rel="noopener noreferrer">
-            Bitcamp
-          </a>{" "}
-          where I'm working on our mobile app for our hackathon attendees in
-          April.
+          I'm a student at University of Maryland (UMD) and a software
+          engineering intern at Capital One.
         </p>
         <p>
           Previously, I was an intern at Capital One, Thermo Fisher Scientific,
