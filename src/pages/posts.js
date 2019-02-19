@@ -24,7 +24,7 @@ export default ({ data }) => (
         <GridElement key={node.id}>
           <small>
             {data.allMarkdownRemark.edges.length - index} &nbsp; &middot; &nbsp; {node.frontmatter.date} &nbsp;
-            &middot; &nbsp; #{node.frontmatter.category}
+            &middot; &nbsp; {node.fields.readingTime.text}
           </small>
           <h3>
             <InternalLink to={node.fields.slug}>
@@ -47,10 +47,12 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "YYYY-MM-DD")
-            category
           }
           fields {
             slug
+            readingTime {
+              text
+            }
           }
         }
       }

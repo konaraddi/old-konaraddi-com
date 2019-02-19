@@ -12,7 +12,7 @@ const TitleWrapper = styled.h1`
 const Body = styled.div`
   margin-left: auto;
   margin-right: auto;
-  ${media.tablet`max-width: 640px;`}
+  ${media.tablet`max-width: 600px;`}
 `;
 
 export default ({ data, pageContext }) => {
@@ -23,8 +23,7 @@ export default ({ data, pageContext }) => {
     <Layout>
       <TitleWrapper>{post.frontmatter.title}</TitleWrapper>
       <p>
-        {post.frontmatter.date} &nbsp; &middot; &nbsp; #
-        {post.frontmatter.category}
+        {post.frontmatter.date} &nbsp; &middot; &nbsp; {post.fields.readingTime.text}
       </p>
       <br />
       <Body>
@@ -57,10 +56,12 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "YYYY-MM-DD")
-        category
       }
       fields {
         slug
+        readingTime {
+          text
+        }
       }
     }
   }
