@@ -7,9 +7,11 @@ const typography = new Typography({
   baseFontSize: "18px",
   scaleRatio: 3,
   baseLineHeight: 1.8,
-  // see Layout.js for import statements
+
+  // see src/components/Layout.js for imports
   headerFontFamily: ["IBM Plex Sans", "sans-serif"],
   bodyFontFamily: ["IBM Plex Serif", "serif"],
+  
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
     a: {
       color: colors.primary
