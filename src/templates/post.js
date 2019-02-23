@@ -5,10 +5,6 @@ import Layout from "../components/Layout";
 import styled from "styled-components";
 import media from "../utils/media";
 
-const TitleWrapper = styled.h1`
-  ${media.tablet`max-width: 960px;`}
-`;
-
 const Body = styled.div`
   margin-left: auto;
   margin-right: auto;
@@ -20,8 +16,7 @@ export default ({ data, pageContext }) => {
   const previous = pageContext.previous;
   const next = pageContext.next;
   return (
-    <Layout>
-      <TitleWrapper>{post.frontmatter.title}</TitleWrapper>
+    <Layout title={post.frontmatter.title}>
       <p>
         {post.frontmatter.date} &nbsp; &middot; &nbsp; {post.fields.readingTime.text}
       </p>

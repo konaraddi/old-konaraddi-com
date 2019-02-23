@@ -17,9 +17,7 @@ const HomePageGridElement = styled.div`
 `;
 
 export default ({ data }) => (
-  <Layout>
-    <h1>Omkar Konaraddi</h1>
-    <br />
+  <Layout title="Omkar Konaraddi">
     <HomePageGrid>
       <HomePageGridElement>
         <p>

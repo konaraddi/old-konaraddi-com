@@ -16,9 +16,7 @@ const GridElement = styled.div`
 `;
 
 export default ({ data }) => (
-  <Layout>
-    <h1>Omkar's posts</h1>
-    <br />
+  <Layout title="Omkar's posts">
     <Grid>
       {data.allMarkdownRemark.edges.map(({ node }, index) => (
         <GridElement key={node.id}>

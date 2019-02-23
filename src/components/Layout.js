@@ -5,6 +5,7 @@ import "typeface-ibm-plex-sans";
 import "typeface-ibm-plex-serif";
 
 import React from "react";
+import { Helmet } from "react-helmet";
 import Navbar from "./Navbar";
 import styled from "styled-components";
 import media from "../utils/media";
@@ -16,8 +17,16 @@ const LayoutWrapper = styled.div`
   ${media.fullhd`max-width: 1200px; margin: 4rem auto;`}
 `;
 
-export default ({ children }) => (
+const TitleWrapper = styled.h1`
+  ${media.tablet`max-width: 1040px;`}
+`;
+
+export default ({ title, children }) => (
   <div>
+    <Helmet>
+      <title>{title}</title>
+      <meta name="theme-color" content={colors.primary} />
+    </Helmet>
     <style
       dangerouslySetInnerHTML={{
         __html: `
@@ -27,6 +36,8 @@ export default ({ children }) => (
     />
     <LayoutWrapper>
       <Navbar />
+      <br />
+      <TitleWrapper>{title}</TitleWrapper>
       <br />
       {children}
     </LayoutWrapper>

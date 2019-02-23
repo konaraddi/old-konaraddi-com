@@ -7,9 +7,7 @@ import colors from "../utils/colors";
 
 export default function({ data }) {
   return (
-    <Layout>
-      <h1>Omkar's projects</h1>
-      <br />
+    <Layout title="Omkar's projects">
       <GitHubCorner
         url={"https://github.com/konaraddi/konaraddi-com-v2"}
         fill={colors.primary}
