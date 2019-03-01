@@ -2,7 +2,6 @@ import "prismjs/themes/prism.css";
 
 // see src/utils/typography.js for usage
 import "typeface-ibm-plex-sans";
-import "typeface-ibm-plex-serif";
 
 import React from "react";
 import { Helmet } from "react-helmet";

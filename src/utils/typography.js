@@ -6,11 +6,11 @@ const typography = new Typography({
   headerColor: colors.black,
   baseFontSize: "18px",
   scaleRatio: 3,
-  baseLineHeight: 1.8,
+  baseLineHeight: 1.6,
 
   // see src/components/Layout.js for imports
   headerFontFamily: ["IBM Plex Sans", "sans-serif"],
-  bodyFontFamily: ["IBM Plex Serif", "serif"],
+  bodyFontFamily: ["IBM Plex Sans", "sans-serif"],
   
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
     a: {
