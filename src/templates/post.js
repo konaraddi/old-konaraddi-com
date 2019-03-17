@@ -24,6 +24,7 @@ export default ({ data, pageContext }) => {
       <Body>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </Body>
+      <br />
       <div style={{ display: "flex" }}>
         {previous && (
           <p>
