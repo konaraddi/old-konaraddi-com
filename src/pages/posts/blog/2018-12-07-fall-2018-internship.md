@@ -4,7 +4,11 @@ date: 2018-12-07
 category: Blog
 ---
 
-This past fall I was a part-time software engineering intern at Capital One. I was amongst the first batch of interns at Capital One's [new](https://today.umd.edu/articles/capital-one-tech-incubator-opens-diamondback-garage-b93bbf87-a326-44c6-a207-5f4c418b387f) [lab](http://www.dbknews.com/2018/12/10/umd-college-park-discovery-district-wework-capital-one-hotel/) in College Park.
+TL;DR: I interned with the C4ML Credit Monitoring team where I added new components and endpoints to a web app used by engineers within the two largest, asset-generating programs at Capital One. The web app enables engineers to view insights for their models from a residual analysis pipeline. I also developed a model to predict charge offs.
+
+---
+
+This past fall I was a software engineering intern at Capital One. I was amongst the first batch of interns at Capital One's [new](https://today.umd.edu/articles/capital-one-tech-incubator-opens-diamondback-garage-b93bbf87-a326-44c6-a207-5f4c418b387f) [lab](http://www.dbknews.com/2018/12/10/umd-college-park-discovery-district-wework-capital-one-hotel/) in College Park.
 
 It was part time (~15 hours per week) and I worked remotely with the NYC Credit Monitoring team within Capital One's Center for Machine Learning organization. Most coworkers were working in New York City.
 
@@ -16,7 +20,7 @@ Malcolm is a work in progress but is currently used by two of the largest asset 
 
 ## The work
 
-I worked on a web app for Malcolm (`malcolm-web`).
+I worked on the web app for Malcolm (`malcolm-web`).
 
 The Malcolm pipeline deposits insights in AWS S3 buckets in the form of mostly html, csv, png, and json files and then `malcolm-web` displays these results for engineers. Before I started as an intern, there was one developer working on the web app. The developer left Capital One and, apart from a README depicting the folder structure and how to run the web app (the usual `npm start`, `npm t`, `npm run build`), there was little knowledge transfer.
 
