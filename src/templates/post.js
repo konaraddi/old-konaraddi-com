@@ -8,7 +8,7 @@ import media from "../utils/media";
 const Body = styled.div`
   margin-left: auto;
   margin-right: auto;
-  ${media.tablet`max-width: 600px;`}
+  ${media.tablet`max-width: 552px;`}
 `;
 
 export default ({ data, pageContext }) => {
