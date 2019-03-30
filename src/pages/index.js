@@ -22,12 +22,7 @@ export default ({ data }) => (
       <HomePageGridElement>
         <p>
           I'm a student at University of Maryland (UMD) and a software
-          engineering intern at Capital One.
-        </p>
-        <p>
-          Previously, I was an intern at Capital One, Thermo Fisher Scientific,
-          and UMD. I was a teaching assistant for both <i>Intro. to Node</i> and{" "}
-          <i>Intro. to React</i> at UMD.
+          engineering intern at Capital One. I like to read, do origami, and watch movies.
         </p>
         <p>
           One of my projects turns smartphones into 3D controllers using a web
@@ -122,7 +117,7 @@ export default ({ data }) => (
 export const query = graphql`
   query {
     allMarkdownRemark(
-      limit: 3
+      limit: 2
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       totalCount
