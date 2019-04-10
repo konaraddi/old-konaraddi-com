@@ -5,6 +5,9 @@ category: Notes
 ---
 
 TL;DR: **What does life expect from you?**
+
+EDIT (2018/04/10): I think life is about doing what you're supposed to do. To make the right choices consistently. I suppose the reward is the satisfaction of hours, days, weeks, years, and, ultimately, a life well spent. There's also probably a sense of liberation in having done all that could be done and was supposed to be done.
+
 ___
 
 _Man's Search for Meaning_ is written by Dr. Viktor Frankl. [From his Wikipedia page](https://en.wikipedia.org/wiki/Viktor_Frankl), he "was an Austrian neurologist and psychiatrist as well as a Holocaust survivor".
