@@ -21,6 +21,7 @@ module.exports = {
         path: `${__dirname}/src/`
       }
     },
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -34,7 +35,10 @@ module.exports = {
               showLineNumbers: false,
               noInlineHighlight: false
             }
-          }
+          },
+          {
+            resolve: `gatsby-remark-images`
+          },
         ]
       }
     },
@@ -57,7 +61,7 @@ module.exports = {
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "standalone",
-        icon: "src/images/icon.png",
+        icon: "static/icon.png",
         include_favicon: true
       }
     }
