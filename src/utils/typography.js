@@ -6,7 +6,7 @@ const typography = new Typography({
   headerColor: colors.black,
   baseFontSize: "19px",
   scaleRatio: 3,
-  baseLineHeight: 1.5,
+  baseLineHeight: 1.6,
 
   // see src/components/Layout.js for font import
   headerFontFamily: ["IBM Plex Sans", "sans-serif"],
@@ -18,6 +18,12 @@ const typography = new Typography({
     },
     blockquote: {
       fontStyle: "italic"
+    },
+    code: {
+      fontSize: "inherit"
+    },
+    pre: {
+      fontSize: "inherit"
     }
   })
 });
