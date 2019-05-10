@@ -9,8 +9,8 @@ const typography = new Typography({
   baseLineHeight: 1.5,
 
   // see src/components/Layout.js for font import
-  headerFontFamily: ["Zilla Slab", "sans-serif"],
-  bodyFontFamily: ["Zilla Slab", "sans-serif"],
+  headerFontFamily: ["IBM Plex Sans", "sans-serif"],
+  bodyFontFamily: ["IBM Plex Sans", "sans-serif"],
   
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
     a: {
