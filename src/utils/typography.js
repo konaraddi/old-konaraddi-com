@@ -4,7 +4,7 @@ import colors from "./colors";
 const typography = new Typography({
   bodyColor: colors.black,
   headerColor: colors.black,
-  baseFontSize: "19px",
+  baseFontSize: "18px",
   scaleRatio: 3,
   baseLineHeight: 1.6,
 

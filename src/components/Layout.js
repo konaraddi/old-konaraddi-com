@@ -17,10 +17,6 @@ const LayoutWrapper = styled.div`
   ${media.fullhd`max-width: 1200px; margin: 4rem auto;`}
 `;
 
-const TitleWrapper = styled.h1`
-  ${media.tablet`max-width: 1040px;`}
-`;
-
 export default ({ title, children }) => (
   <div>
     <Helmet>
@@ -37,7 +33,7 @@ export default ({ title, children }) => (
     <LayoutWrapper>
       <Navbar />
       <br />
-      <TitleWrapper>{title}</TitleWrapper>
+      <h1>{title}</h1>
       <br />
       {children}
     </LayoutWrapper>

@@ -21,7 +21,7 @@ export default ({ data }) => (
     <HomePageGrid>
       <HomePageGridElement>
         <p>
-          I'm a student at University of Maryland and a software engineering intern at Capital One. I like to read, do origami, and watch movies.
+          I'm a student at University of Maryland where I'm pursuing a B.S. in Computer Science. I like to read, do origami, and watch movies.
         </p>
         <p>
           One of my projects turns smartphones into 3D controllers using a web
