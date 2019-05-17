@@ -99,7 +99,7 @@ export default ({ data }) => (
         {data.allJson.edges.map(({ node }) => (
           <p key={node.link}>
             <a href={node.link} target="_blank" rel="noopener noreferrer">
-              <b>{node.name}</b>
+              <strong>{node.name}</strong>
             </a>
             <br />
             {node.description}

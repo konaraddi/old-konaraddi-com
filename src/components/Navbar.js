@@ -22,17 +22,17 @@ export default () => (
   <NavWrapper>
     <LinkWrapper>
       <InternalLink to="/">
-        <b>Omkar</b>
+        <strong>Omkar</strong>
       </InternalLink>
     </LinkWrapper>
     <LinkWrapper style={{ marginLeft: "auto" }}>
       <InternalLink to="/posts">
-        <b>Posts</b>
+        <strong>Posts</strong>
       </InternalLink>
     </LinkWrapper>
     <LinkWrapper>
       <InternalLink to="/projects">
-        <b>Projects</b>
+        <strong>Projects</strong>
       </InternalLink>
     </LinkWrapper>
   </NavWrapper>
