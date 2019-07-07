@@ -1,7 +1,6 @@
 ---
 title: University of Maryland CyberEdu — A Year Later
 date: 2018-05-29
-category: Blog
 ---
 
 The purpose of this post is to document past and present work at UMD’s CyberEdu program. It may be useful for upcoming CyberEdu employees. If you're not a CyberEdu employee, you may want to skip the Background section. As of May 2018, I have been a student employee at UMD CyberEdu, averaging less than 10 hours per week towards work, since late March 2017.

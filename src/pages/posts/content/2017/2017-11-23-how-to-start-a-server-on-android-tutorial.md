@@ -1,7 +1,6 @@
 ---
 title: How To Start a Server on Android
 date: 2017-11-23
-category: Content
 ---
 
 Have you ever needed to whip up a test server but your laptop was too far away? Perhaps you're at a hackathon and you can't connect to a local web server on your laptop from your phone because of the network's configuration?

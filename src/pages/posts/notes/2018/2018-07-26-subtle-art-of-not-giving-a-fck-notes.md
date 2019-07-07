@@ -1,7 +1,6 @@
 ---
 title: Notes from "The Subtle Art of Not Giving a F*ck"
 date: 2018-07-26
-category: Notes
 ---
 
 Notes from _The Subtle Art of Not Giving a F\*ck_ by Mark Manson.

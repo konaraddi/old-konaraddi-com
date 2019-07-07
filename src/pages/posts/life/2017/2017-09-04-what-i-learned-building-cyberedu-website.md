@@ -1,7 +1,6 @@
 ---
 title: What I learned from building the CyberEdu website
 date: 2017-09-04
-category: Blog
 ---
 
 This past summer I worked at CyberEdu. I led a team of 4 students in the development of UMD CyberEdu's website. Here's what I learned.

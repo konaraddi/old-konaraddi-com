@@ -1,7 +1,6 @@
 ---
 title: Fall 2018 Software Engineering Internship at Capital One
 date: 2018-12-07
-category: Blog
 ---
 
 TL;DR: I interned with the C4ML Credit Monitoring team where I added new components and endpoints to a web app used by engineers within the two largest, asset-generating programs at Capital One. The web app enables engineers to view insights for their models from a residual analysis pipeline. I also developed a model to predict charge offs.

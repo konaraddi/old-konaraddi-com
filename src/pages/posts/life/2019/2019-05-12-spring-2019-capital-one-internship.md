@@ -1,7 +1,6 @@
 ---
 title: Spring 2019 SWE Internship at Capital One
 date: 2019-05-12
-category: Blog
 ---
 
 I was an intern on the C4ML Forecasting Platform team where I worked on forecasting the number of Capital One credit card holders that will charge off in the upcoming months. 

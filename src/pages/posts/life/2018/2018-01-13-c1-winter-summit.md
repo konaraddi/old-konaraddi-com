@@ -1,7 +1,6 @@
 ---
 title: Capital One 2018 Software Engineering Winter Summit
 date: 2018-01-13
-category: Blog
 ---
 
 I attended the CapitalOne 2018 Software Engineering Winter Summit the past few days. Here's my experience.

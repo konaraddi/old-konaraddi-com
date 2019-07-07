@@ -1,7 +1,6 @@
 ---
 title: Notes from "Manage Your Day-to-Day"
 date: 2018-05-06
-category: Notes
 ---
 
 What I learned from _Manage Your Day-to-Day_, a book of wisdom compiled by the people at 99U

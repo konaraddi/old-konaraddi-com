@@ -1,7 +1,6 @@
 ---
 title: Notes from "Man's Search for Meaning" by Viktor Frankl
 date: 2019-03-17
-category: Notes
 ---
 
 TL;DR: **What does life expect from you?**

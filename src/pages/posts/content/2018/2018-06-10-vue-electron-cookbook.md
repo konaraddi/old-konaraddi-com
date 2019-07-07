@@ -1,7 +1,6 @@
 ---
 title: Building a Desktop App with Electron and Vue
 date: 2018-06-10
-category: Content
 ---
 
 _This tutorial was written on June 10th, 2018 for the official Vue.js documentation site. However, as of August 7th, 2018, [it is still pending review](https://github.com/vuejs/vuejs.org/pull/1681) so the tutorial has been shared here too._

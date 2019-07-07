@@ -1,7 +1,6 @@
 ---
 title: Notes from "Deep Work"
 date: 2018-06-14
-category: Notes
 ---
 
 Notes from Cal Newport's _Deep Work_.

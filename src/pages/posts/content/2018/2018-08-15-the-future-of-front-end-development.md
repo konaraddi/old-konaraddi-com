@@ -1,7 +1,6 @@
 ---
 title: The Future of Front End Development
 date: 2018-08-15
-category: Content
 ---
 
 This post is inspired by [this Reddit post](https://www.reddit.com/r/webdev/comments/94uivb/where_do_you_think_web_dev_will_be_in_5_years_10/?utm_source=reddit-android) and I want to expand upon [my comment](https://www.reddit.com/r/webdev/comments/94uivb/where_do_you_think_web_dev_will_be_in_5_years_10/e3offks?utm_source=reddit-android).

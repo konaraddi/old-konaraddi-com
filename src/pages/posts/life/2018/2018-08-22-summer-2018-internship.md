@@ -1,7 +1,6 @@
 ---
 title: Summer 2018 Internship at Thermo Fisher Scientific
 date: 2018-08-22
-category: Blog
 ---
 
 This past summer I was an intern at Thermo Fisher Scientific. It's a large biotech company that makes and sells both software and hardware to other biotech companies and research labs around the globe. If you've worked in a bio-related research lab, then you've likely seen the company's name printed on an instrument.

@@ -1,7 +1,6 @@
 ---
 title: Notes from "The Elements of Style"
 date: 2018-02-09
-category: Notes
 ---
 
 I recently read _The Elements of Style_ by William Strunk Jr. and E.B. White. Here's what I learned.

@@ -1,7 +1,6 @@
 ---
 title: Progressive Web Apps could help new mobile operating systems succeed
 date: 2019-01-06
-category: Content
 ---
 
 If PWAs become popular (and [they](https://medium.com/mobile-lifestyle/will-progressive-web-apps-ever-replace-native-mobile-apps-c05a61c981e4) [probably](https://www.forbes.com/sites/forbestechcouncil/2018/03/09/why-progressive-web-apps-will-replace-native-mobile-apps/) [will](https://www.atrium.co/blog/founders-should-build-website-not-mobile-app/)) then they could help new mobile operating systems succeed. This post explains why but I'm not an expert.

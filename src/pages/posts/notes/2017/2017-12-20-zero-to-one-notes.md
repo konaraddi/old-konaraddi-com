@@ -1,7 +1,6 @@
 ---
 title: Notes from "Zero To One"
 date: 2017-12-20
-category: Notes
 ---
 
 Just finished reading a book, _Zero to One_, written by Peter Thiel with Blake Masters.

@@ -1,7 +1,6 @@
 ---
 title: Notes from "The Design of Everyday Things"
 date: 2018-07-12
-category: Notes
 ---
 
 Notes from _The Design of Everyday Things_ by Don Norman.

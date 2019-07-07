@@ -1,7 +1,6 @@
 ---
 title: Arrow Functions in ES6 (ECMAScript 2015)
 date: 2018-01-20
-category: Content
 ---
 
 This post is for people learning JavaScript and will cover the gist of what you should know about arrow functions introduced in ES6 (ECMAScript 2015).
