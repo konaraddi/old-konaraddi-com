@@ -17,7 +17,9 @@ const typography = new Typography({
       color: colors.primary
     },
     blockquote: {
-      fontStyle: "italic"
+      marginLeft: 0,
+      paddingLeft: "1.25rem",
+      borderLeft: `0.1rem solid ${colors.black}`
     },
     code: {
       fontSize: "inherit"
