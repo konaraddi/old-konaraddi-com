@@ -66,7 +66,7 @@ export default ({ data }) => (
           </a>
           &nbsp;&nbsp;&nbsp;
           <a
-            href="https://linkedin.com/in/omkar-konaraddi"
+            href="https://linkedin.com/in/konaraddi"
             target="_blank"
             rel="noopener noreferrer"
           >
