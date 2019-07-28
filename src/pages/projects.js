@@ -14,7 +14,7 @@ export default function({ data }) {
         color={colors.white}
       />
       <Grid>
-        {data.allJson.edges.map(({ node }) => (
+        {data.allProjectsJson.edges.map(({ node }) => (
           <GridElement key={node.link}>
             <p>
               <a href={node.link} target="_blank" rel="noopener noreferrer">
@@ -32,7 +32,7 @@ export default function({ data }) {
 
 export const query = graphql`
   query {
-    allJson {
+    allProjectsJson {
       edges {
         node {
           name

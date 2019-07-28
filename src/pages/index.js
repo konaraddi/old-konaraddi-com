@@ -96,7 +96,7 @@ export default ({ data }) => (
         <br />
 
         <h4 style={{ textTransform: "uppercase" }}>Recent projects</h4>
-        {data.allJson.edges.map(({ node }) => (
+        {data.allProjectsJson.edges.map(({ node }) => (
           <p key={node.link}>
             <a href={node.link} target="_blank" rel="noopener noreferrer">
               <strong>{node.name}</strong>
@@ -136,7 +136,7 @@ export const query = graphql`
         }
       }
     }
-    allJson(limit: 2) {
+    allProjectsJson(limit: 2) {
       edges {
         node {
           name
