@@ -33,8 +33,6 @@ export default ({ title, children }) => (
     <LayoutWrapper>
       <Navbar />
       <br />
-      <h1>{title}</h1>
-      <br />
       {children}
     </LayoutWrapper>
   </div>

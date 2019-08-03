@@ -17,6 +17,7 @@ export default ({ data, pageContext }) => {
   const next = pageContext.next;
   return (
     <Layout title={post.frontmatter.title}>
+      <h1>{post.frontmatter.title}</h1>
       <p>
         {post.frontmatter.date} &nbsp; &middot; &nbsp; {post.fields.readingTime.text}
       </p>

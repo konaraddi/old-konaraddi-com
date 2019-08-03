@@ -20,8 +20,9 @@ export default ({ data }) => (
   <Layout title="Omkar Konaraddi">
     <HomePageGrid>
       <HomePageGridElement>
+        <h2>Omkar Konaraddi</h2>
         <p>
-          I'm a student at University of Maryland where I'm pursuing a B.S. in Computer Science. I like to read, do origami, and watch movies.
+          Hello! I'm a Software Engineering Intern at Mozilla where I'm working on a new JavaScript API for web extensions to provide contextual tips in the address bar on Firefox for desktop. I'm a student at University of Maryland where I'm pursuing a B.S. in Computer Science.
         </p>
         <p>
           One of my projects turns smartphones into 3D controllers using a web
@@ -76,7 +77,6 @@ export default ({ data }) => (
       </HomePageGridElement>
 
       <HomePageGridElement>
-        <h4 style={{ textTransform: "uppercase" }}>Recent posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }, index) => (
           <div key={node.id}>
             <small>
@@ -95,7 +95,6 @@ export default ({ data }) => (
 
         <br />
 
-        <h4 style={{ textTransform: "uppercase" }}>Recent projects</h4>
         {data.allProjectsJson.edges.map(({ node }) => (
           <p key={node.link}>
             <a href={node.link} target="_blank" rel="noopener noreferrer">
@@ -116,7 +115,7 @@ export default ({ data }) => (
 export const query = graphql`
   query {
     allMarkdownRemark(
-      limit: 2
+      limit: 3
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       totalCount
@@ -136,7 +135,7 @@ export const query = graphql`
         }
       }
     }
-    allProjectsJson(limit: 2) {
+    allProjectsJson(limit: 3) {
       edges {
         node {
           name
