@@ -20,13 +20,11 @@ export default ({ data }) => (
   <Layout title="Omkar Konaraddi">
     <HomePageGrid>
       <HomePageGridElement>
-        <h2>Omkar Konaraddi</h2>
+        <h2>Hi! I'm Omkar.</h2>
         <p>
-          Hello! I'm a Software Engineering Intern at Mozilla where I'm working on a new JavaScript API for web extensions to provide contextual tips in the address bar on Firefox for desktop. I'm a student at University of Maryland where I'm pursuing a B.S. in Computer Science.
-        </p>
-        <p>
-          One of my projects turns smartphones into 3D controllers using a web
-          app. Check out the demo below.
+          I'm a student at University of Maryland where I'm pursuing a B.S. in
+          Computer Science. This past summer, I was a Software Engineering
+          Intern at Mozilla. Check out my presentation below.
         </p>
         <div
           style={{
@@ -37,7 +35,7 @@ export default ({ data }) => (
           }}
         >
           <iframe
-            title="Web Riimote Demo"
+            title="Mozilla Summer 2019 Internship Presentation - Omkar Konaraddi"
             width="560"
             height="315"
             style={{
@@ -47,7 +45,7 @@ export default ({ data }) => (
               width: "100%",
               position: "absolute"
             }}
-            src="https://www.youtube.com/embed/O2r1-lR6Xq8"
+            src="https://www.youtube.com/embed/hntkoHEm3uY"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
@@ -56,7 +54,6 @@ export default ({ data }) => (
 
         <br />
 
-        <p>I'm interested in software, education, and design.</p>
         <p>
           <a
             href="https://github.com/konaraddi"
@@ -80,7 +77,8 @@ export default ({ data }) => (
         {data.allMarkdownRemark.edges.map(({ node }, index) => (
           <div key={node.id}>
             <small>
-              {node.frontmatter.date} &nbsp; &middot; &nbsp; {node.fields.readingTime.text}
+              {node.frontmatter.date} &nbsp; &middot; &nbsp;{" "}
+              {node.fields.readingTime.text}
             </small>
             <h3>
               <InternalLink to={node.fields.slug}>
@@ -90,7 +88,7 @@ export default ({ data }) => (
           </div>
         ))}
         <h4>
-          <InternalLink to="/posts">See all posts →</InternalLink>
+          <InternalLink to="/posts">ALL POSTS →</InternalLink>
         </h4>
 
         <br />
@@ -98,14 +96,14 @@ export default ({ data }) => (
         {data.allProjectsJson.edges.map(({ node }) => (
           <p key={node.link}>
             <a href={node.link} target="_blank" rel="noopener noreferrer">
-              <strong>{node.name}</strong>
+              {node.name}
             </a>
             <br />
             {node.description}
           </p>
         ))}
         <h4>
-          <InternalLink to="/projects">See all projects →</InternalLink>
+          <InternalLink to="/projects">ALL PROJECTS →</InternalLink>
         </h4>
       </HomePageGridElement>
     </HomePageGrid>
@@ -135,7 +133,7 @@ export const query = graphql`
         }
       }
     }
-    allProjectsJson(limit: 3) {
+    allProjectsJson(limit: 2) {
       edges {
         node {
           name

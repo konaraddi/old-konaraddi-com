@@ -18,7 +18,7 @@ export default function({ data }) {
           <GridElement key={node.link}>
             <p>
               <a href={node.link} target="_blank" rel="noopener noreferrer">
-                <strong>{node.name}</strong>
+                {node.name}
               </a>
               <br />
               {node.description}
