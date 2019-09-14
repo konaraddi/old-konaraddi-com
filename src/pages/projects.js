@@ -2,24 +2,20 @@ import React from "react";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import { Grid, GridElement } from "../components/Grid";
-import GitHubCorner from "../components/GitHubCorner";
-import colors from "../utils/colors";
 
 export default function({ data }) {
   return (
     <Layout title="Omkar's projects">
-      <GitHubCorner
-        url={"https://github.com/konaraddi/konaraddi-com-v2"}
-        fill={colors.primary}
-        color={colors.white}
-      />
+      <p>These are links to some things I made a while ago.</p>
+      <br />
       <Grid>
         {data.allProjectsJson.edges.map(({ node }) => (
           <GridElement key={node.link}>
             <p>
               <a href={node.link} target="_blank" rel="noopener noreferrer">
                 {node.name}
-              </a>
+              </a>{" "}
+              - <i>{node.time}</i>
               <br />
               {node.description}
             </p>
@@ -38,7 +34,7 @@ export const query = graphql`
           name
           link
           description
-          tech
+          time
         }
       }
     }

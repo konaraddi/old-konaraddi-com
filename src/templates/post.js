@@ -1,6 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
-import InternalLink from "../components/InternalLink";
+import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import styled from "styled-components";
 import media from "../utils/media";
@@ -29,16 +28,16 @@ export default ({ data, pageContext }) => {
       <div style={{ display: "flex" }}>
         {previous && (
           <p>
-            <InternalLink to={previous.fields.slug} rel="prev">
+            <Link to={previous.fields.slug} rel="prev">
               ← Older: <i>{previous.frontmatter.title}</i>
-            </InternalLink>
+            </Link>
           </p>
         )}
         {next && (
           <p style={{ marginLeft: "auto" }}>
-            <InternalLink to={next.fields.slug} rel="next">
+            <Link to={next.fields.slug} rel="next">
               Newer: <i>{next.frontmatter.title}</i> →
-            </InternalLink>
+            </Link>
           </p>
         )}
       </div>

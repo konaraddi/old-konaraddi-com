@@ -1,6 +1,6 @@
-// https://www.ibm.com/design/language/resources/color-library/
 export default {
-  primary: "#2d74da", // blue 50
-  white: "#fdfcfc", // warm white 1
-  black: "#272727" // gray 90
+  primary: "#73c3ff", // light blue
+  secondary: "#ffc852", // light yellow
+  white: "#fdfcfc",
+  black: "#272727"
 };

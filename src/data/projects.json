@@ -4,8 +4,7 @@
     "link": "https://github.com/konaraddi/umd-course-vis",
     "description": "Visualize a graph of prerequisites for courses offered at University of Maryland.",
     "tech": "Vue",
-    "time": "Aug 2018",
-    "show": false
+    "time": "Aug 2018"
   },
   {
     "name": "web-riimote",

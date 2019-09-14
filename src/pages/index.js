@@ -1,6 +1,5 @@
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import React from "react";
-import InternalLink from "../components/InternalLink";
 import Layout from "../components/Layout";
 import styled from "styled-components";
 import media from "../utils/media";
@@ -18,13 +17,17 @@ const HomePageGridElement = styled.div`
 
 export default ({ data }) => (
   <Layout title="Omkar Konaraddi">
+    <h1>Hi, I'm Omkar</h1>
     <HomePageGrid>
       <HomePageGridElement>
-        <h2>Hi! I'm Omkar.</h2>
         <p>
-          I'm a student at University of Maryland where I'm pursuing a B.S. in
-          Computer Science. This past summer, I was a Software Engineering
-          Intern at Mozilla. Check out my presentation below.
+          I'm pursuing a B.S. in Computer Science and co-teaching CMSC389O "The
+          Coding Interview" at University of Maryland.
+        </p>
+        <p>
+          Previously I was an intern at my university, Thermo Fisher
+          Scientific, Capital One, and Mozilla. The following is a video where I
+          talk about what I did during my most recent internship at Mozilla.
         </p>
         <div
           style={{
@@ -60,16 +63,18 @@ export default ({ data }) => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            GitHub
+            <strong>GitHub</strong>
           </a>
           &nbsp;&nbsp;&nbsp;
-          <a
-            href="https://linkedin.com/in/konaraddi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
+          <strong>
+            <a
+              href="https://linkedin.com/in/konaraddi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </strong>
         </p>
       </HomePageGridElement>
 
@@ -80,31 +85,12 @@ export default ({ data }) => (
               {node.frontmatter.date} &nbsp; &middot; &nbsp;{" "}
               {node.fields.readingTime.text}
             </small>
-            <h3>
-              <InternalLink to={node.fields.slug}>
-                {node.frontmatter.title}
-              </InternalLink>
+            <h3 style={{ fontWeight: "normal", lineHeight: 1.3 }}>
+              <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
             </h3>
           </div>
         ))}
-        <h4>
-          <InternalLink to="/posts">ALL POSTS →</InternalLink>
-        </h4>
-
-        <br />
-
-        {data.allProjectsJson.edges.map(({ node }) => (
-          <p key={node.link}>
-            <a href={node.link} target="_blank" rel="noopener noreferrer">
-              {node.name}
-            </a>
-            <br />
-            {node.description}
-          </p>
-        ))}
-        <h4>
-          <InternalLink to="/projects">ALL PROJECTS →</InternalLink>
-        </h4>
+        <Link to="/posts/">Browse all posts</Link>
       </HomePageGridElement>
     </HomePageGrid>
   </Layout>
@@ -113,7 +99,7 @@ export default ({ data }) => (
 export const query = graphql`
   query {
     allMarkdownRemark(
-      limit: 3
+      limit: 5
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       totalCount

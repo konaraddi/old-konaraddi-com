@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { graphql } from "gatsby";
-import InternalLink from "../components/InternalLink";
+import { graphql, Link } from "gatsby";
 import styled from "styled-components";
 
 const Grid = styled.div`
@@ -17,17 +16,18 @@ const GridElement = styled.div`
 
 export default ({ data }) => (
   <Layout title="Omkar's posts">
+    <p>Sometimes I write about something and share it here.</p>
+    <br />
     <Grid>
       {data.allMarkdownRemark.edges.map(({ node }, index) => (
         <GridElement key={node.id}>
           <small>
-            {data.allMarkdownRemark.edges.length - index} &nbsp; &middot; &nbsp; {node.frontmatter.date} &nbsp;
-            &middot; &nbsp; {node.fields.readingTime.text}
+            {data.allMarkdownRemark.edges.length - index} &nbsp; &middot; &nbsp;{" "}
+            {node.frontmatter.date} &nbsp; &middot; &nbsp;{" "}
+            {node.fields.readingTime.text}
           </small>
-          <h3>
-            <InternalLink to={node.fields.slug}>
-              {node.frontmatter.title}
-            </InternalLink>
+          <h3 style={{ fontWeight: "normal", lineHeight: 1.3 }}>
+            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
           </h3>
         </GridElement>
       ))}

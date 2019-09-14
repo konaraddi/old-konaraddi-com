@@ -1,39 +1,60 @@
 import React from "react";
-import InternalLink from "./InternalLink";
+import { Link } from "gatsby";
 import styled from "styled-components";
 import media from "../utils/media";
+import colors from "../utils/colors";
 
-const NavWrapper = styled.nav`
-  display: flex;
+let NavLink = styled(Link)`
+  text-transform: uppercase;
+  padding-bottom: 0.15rem;
+
+  /* for the cool underline */
+  box-shadow: inset 0 -0.25rem 0 0 ${colors.secondary};
+  &:hover {
+    box-shadow: inset 0 -0.75rem 0 0 ${colors.secondary};
+  }
 `;
 
-const LinkWrapper = styled.h4`
+const LinkWrapper = ({ to, children }) => (
+  <NavLink
+    to={to}
+    activeStyle={{
+      pointerEvents: "none",
+      cursor: "not-allowed",
+      opacity: 0.25,
+      boxShadow: "none"
+    }}
+  >
+    {children}
+  </NavLink>
+);
+
+const LinkAlignment = styled.h4`
   margin-right: 1rem;
   ${media.tablet`
-    margin-right: 1.5rem;
-  `}
+  margin-right: 1.5rem;
+`}
   :last-child {
     margin-right: 0rem;
   }
-  text-transform: uppercase;
 `;
 
 export default () => (
-  <NavWrapper>
-    <LinkWrapper>
-      <InternalLink to="/">
+  <nav style={{ display: "flex" }}>
+    <LinkAlignment>
+      <LinkWrapper to="/" activeStyle={{ cursor: "nopointer" }}>
         <strong>Omkar</strong>
-      </InternalLink>
-    </LinkWrapper>
-    <LinkWrapper style={{ marginLeft: "auto" }}>
-      <InternalLink to="/posts">
+      </LinkWrapper>
+    </LinkAlignment>
+    <LinkAlignment style={{ marginLeft: "auto" }}>
+      <LinkWrapper to="/posts/" activeStyle={{ visibility: "hidden" }}>
         <strong>Posts</strong>
-      </InternalLink>
-    </LinkWrapper>
-    <LinkWrapper>
-      <InternalLink to="/projects">
+      </LinkWrapper>
+    </LinkAlignment>
+    <LinkAlignment>
+      <LinkWrapper to="/projects/" activeStyle={{ visibility: "hidden" }}>
         <strong>Projects</strong>
-      </InternalLink>
-    </LinkWrapper>
-  </NavWrapper>
+      </LinkWrapper>
+    </LinkAlignment>
+  </nav>
 );
