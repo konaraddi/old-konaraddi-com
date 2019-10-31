@@ -42,6 +42,9 @@ const typography = new Typography({
     },
     pre: {
       fontSize: "inherit"
+    },
+    img: {
+      height: "auto !important",
     }
   })
 });
